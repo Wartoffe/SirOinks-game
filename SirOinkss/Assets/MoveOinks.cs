@@ -16,9 +16,9 @@ public class MoveOinks : MonoBehaviour
         float yDirection = Input.GetAxis("Vertical");
 
         Vector2 moveDirection = new Vector2(xDirection, yDirection).normalized;
+	//rigid body move
 
-
-        //Move(moveDirection);
+        //[can be done better]Move(moveDirection);
         transform.position += (Vector3)moveDirection*speed;
     }
 
